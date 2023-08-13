@@ -9,9 +9,20 @@ export const metadata = {
   description:
     "I am Sanket Choudhari, a full stack developer from India. I work in technologies like React, NextJS, NodeJS, ExpressJS, MongoDB, MySQL, TailwindCSS, etc.",
   openGraph: {
-    title: "description",
+    url: "https://sanket-choudhari.vercel.app/",
+    title: "Sanket Choudhari - Portfolio",
     description:
       "I am Sanket Choudhari, a full stack developer from India. I work in technologies like React, NextJS, NodeJS, ExpressJS, MongoDB, MySQL, TailwindCSS, etc.",
+    site_name: "Sanket Choudhari - Portfolio",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    title: "Sanket Choudhari - Portfolio",
+    site: "https://sanket-choudhari.vercel.app/",
+    cardType: "summary_large_image",
+    type: "website",
+    locale: "en_US",
   },
 };
 
