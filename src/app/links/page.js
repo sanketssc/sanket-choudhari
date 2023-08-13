@@ -80,7 +80,7 @@ const Links = async () => {
             target="_blank"
           >
             <span className="flex items-center">{link.icon}</span>
-            <span className="basis-1/3 ml-28 text-center">
+            <span className="basis-1/3 sm:ml-28 text-center">
               {link.name}{" "}
               {link.name === "Discord"
                 ? data.discord_status === "online"
@@ -88,7 +88,9 @@ const Links = async () => {
                   : "- offline"
                 : ""}
             </span>
-            <span className="basis-1/4 text-right">{link.username}</span>
+            <span className="basis-1/3 sm:basis-1/4 text-right">
+              {link.username}
+            </span>
           </Link>
         );
       })}
