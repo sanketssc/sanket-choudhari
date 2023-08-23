@@ -87,18 +87,23 @@ export default async function Home() {
   return (
     <main className="text-center flex flex-col gap-4 pt-10 text-xl text-neutral-300">
       <h1 className="text-4xl ml-2 font-bold text-neutral-200">
-        Hey, I am Sanket 👋
+        Hey, I am{" "}
+        <Link href={"mailto:sanketchoudhari1999@gmail.com"}> Sanket </Link> 👋
       </h1>
       <div className="">A FullStack Developer</div>
       <div className="text-justify">
         I am a passionate developer who loves to build things. I am learning new
         things everyday. I am a self taught developer. Please checkout my
         projects{" "}
-        <Link className="underline text-neutral-50" href="/projects">
+        <Link
+          className="underline text-neutral-50 font-semibold"
+          href="/projects"
+        >
           here
         </Link>
         .
       </div>
+
       <div className="text-3xl mt-4">Skills</div>
       <div className="flex flex-wrap justify-center gap-3 px-4 mt-4">
         {skills.map((skill, index) => {

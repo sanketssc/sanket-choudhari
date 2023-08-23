@@ -5,6 +5,7 @@ import {
   FaTwitterSquare,
   FaDiscord,
 } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 export const metadata = {
   title: "Sanket Choudhari - Links",
@@ -49,9 +50,15 @@ const links = [
   },
   {
     name: "Discord",
-    url: "https://discordapp.com/users/*381798111586156545",
+    url: "https://discordapp.com/users/381798111586156545",
     icon: <FaDiscord size={25} />,
     username: "invok3r",
+  },
+  {
+    name: "Mail",
+    url: "mailto:sanketchoudhari1999@gmail.com",
+    icon: <AiOutlineMail size={25} />,
+    username: "sanketchoudhari1999",
   },
 ];
 
@@ -88,7 +95,7 @@ const Links = async () => {
                   : "- offline"
                 : ""}
             </span>
-            <span className="basis-1/3 sm:basis-1/4 text-right">
+            <span className="basis-1/3 text-xs sm:text-base sm:basis-1/4 text-right">
               {link.username}
             </span>
           </Link>

@@ -12,6 +12,9 @@ const navItems = {
   "/links": {
     name: "Links",
   },
+  "/contact": {
+    name: "Contact",
+  },
 };
 const NavBar = () => {
   const pathname = usePathname() || "/";
