@@ -14,6 +14,7 @@ import {
   SiRust,
   SiPrisma,
 } from "react-icons/si";
+import va from "@vercel/analytics";
 
 const skills = [
   {
@@ -84,6 +85,8 @@ const skills = [
 ];
 
 export default async function Home() {
+  va.track("home");
+
   return (
     <main className="text-center flex flex-col gap-4 pt-10 text-xl text-neutral-300">
       <h1 className="text-4xl ml-2 font-bold text-neutral-200">
