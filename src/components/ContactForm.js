@@ -23,7 +23,7 @@ export default function ContactForm() {
       >
         <div className="text-4xl">Get in touch</div>
         <div className="text-lg text-center">
-          If you like my work or are interesting in collaborating,
+          If you like my work or are interested in collaborating,
           <br /> Please fill the form, I will get back to you ASAP!
         </div>
         <div className="flex items-center gap-8 text-xl justify-between w-full">

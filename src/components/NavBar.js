@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import va from "@vercel/analytics";
 
 const navItems = {
   "/": {
@@ -18,6 +19,7 @@ const navItems = {
 };
 const NavBar = () => {
   const pathname = usePathname() || "/";
+  va.track(pathname);
 
   return (
     <nav className="flex items-center justify-center w-full gap-10 flex-wrap px-4 py-4">

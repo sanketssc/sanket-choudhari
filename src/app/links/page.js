@@ -5,7 +5,9 @@ import {
   FaTwitterSquare,
   FaDiscord,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { AiOutlineMail } from "react-icons/ai";
+import { PiCubeTransparentBold } from "react-icons/pi";
 
 export const metadata = {
   title: "Sanket Choudhari - Links",
@@ -53,6 +55,18 @@ const links = [
     url: "https://discordapp.com/users/381798111586156545",
     icon: <FaDiscord size={25} />,
     username: "invok3r",
+  },
+  {
+    name: "Leetcode",
+    url: "https://leetcode.com/sanketssc/",
+    icon: <SiLeetcode size={25} />,
+    username: "sanketssc",
+  },
+  {
+    name: "Scaler",
+    url: "https://www.scaler.com/academy/profile/2600d5a7c591/",
+    icon: <PiCubeTransparentBold transform="rotate(90)" size={25} />,
+    username: "Sanket",
   },
   {
     name: "Mail",

@@ -13,8 +13,12 @@ import {
   SiPython,
   SiRust,
   SiPrisma,
+  SiTypescript,
+  SiMongoose,
+  SiSocketdotio,
 } from "react-icons/si";
-import va from "@vercel/analytics";
+
+import Arrow from "@/components/icons/Arrow";
 
 const skills = [
   {
@@ -36,6 +40,10 @@ const skills = [
   {
     name: "ExpressJS",
     icon: <SiExpress size={25} />,
+  },
+  {
+    name: "Socket.io",
+    icon: <SiSocketdotio size={25} />,
   },
 
   {
@@ -59,6 +67,10 @@ const skills = [
     icon: <SiMongodb size={25} />,
   },
   {
+    name: "Mongoose",
+    icon: <SiMongoose size={25} />,
+  },
+  {
     name: "Git",
     icon: <SiGit size={25} />,
   },
@@ -69,6 +81,10 @@ const skills = [
   {
     name: "JavaScript",
     icon: <FaJs size={25} />,
+  },
+  {
+    name: "Typescript",
+    icon: <SiTypescript size={25} />,
   },
   {
     name: "C++",
@@ -85,8 +101,6 @@ const skills = [
 ];
 
 export default async function Home() {
-  va.track("home");
-
   return (
     <main className="text-center flex flex-col gap-4 pt-10 text-xl text-neutral-300">
       <h1 className="text-4xl ml-2 font-bold text-neutral-200">
@@ -94,21 +108,49 @@ export default async function Home() {
         <Link href={"mailto:sanketchoudhari1999@gmail.com"}> Sanket </Link> 👋
       </h1>
       <div className="">A FullStack Developer</div>
+      <div className="flex justify-between text-neutral-500">
+        <div className="flex items-center">
+          Mail:
+          <Link
+            href={"mailto:sanketchoudhari1999@gmail.com"}
+            className="underline underline-offset-4"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            sanketchoudhari1999@gmail.com
+          </Link>
+        </div>
+        <Link
+          href={
+            "https://drive.google.com/file/d/1ZT1QpSLLDOvtKLSIEpZ4tjenNVeN4dnn/view?usp=sharing"
+          }
+          className="flex items-center gap-1 underline underline-offset-4 "
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          My Resume
+          <Arrow />
+        </Link>
+      </div>
       <div className="text-justify">
         I am a passionate developer who loves to build things. I am learning new
-        things everyday. I am a self taught developer. Please checkout my
-        projects{" "}
+        things everyday. I have good knowledge of technologies like NextJs,
+        ReactJs, TailwindCSS, NodeJS, HTML/CSS. I also have good knowedge of
+        programming languages like C++, Javascript, Typescript, Python and some
+        Rust. I am also well versed with Databases like MySQL and MongoDb.
+        <br /> Please checkout my projects
         <Link
-          className="underline text-neutral-50 font-semibold"
+          className="underline text-neutral-50 underline-offset-2 font-semibold ml-2"
           href="/projects"
         >
           here
+          <Arrow className="inline-block" />
         </Link>
         .
       </div>
 
       <div className="text-3xl mt-4">Skills</div>
-      <div className="flex flex-wrap justify-center gap-3 px-4 mt-4">
+      <div className="flex flex-wrap justify-center gap-5 px-4 mt-4">
         {skills.map((skill, index) => {
           return (
             <div
