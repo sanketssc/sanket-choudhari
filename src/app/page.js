@@ -102,13 +102,13 @@ const skills = [
 
 export default async function Home() {
   return (
-    <main className="text-center flex flex-col gap-4 pt-10 text-xl text-neutral-300">
+    <main className="text-center flex flex-col gap-4 pt-10 text-xl text-neutral-300 w-11/12">
       <h1 className="text-4xl ml-2 font-bold text-neutral-200">
         Hey, I am{" "}
         <Link href={"mailto:sanketchoudhari1999@gmail.com"}> Sanket </Link> 👋
       </h1>
       <div className="">A FullStack Developer</div>
-      <div className="flex justify-between text-neutral-500">
+      <div className="flex-col flex sm:flex-row gap-2 items-center justify-between text-neutral-500">
         <div className="flex items-center">
           Mail:
           <Link
@@ -150,7 +150,7 @@ export default async function Home() {
       </div>
 
       <div className="text-3xl mt-4">Skills</div>
-      <div className="flex flex-wrap justify-center gap-5 px-4 mt-4">
+      <div className="flex flex-wrap justify-center gap-3 px-2 mt-4">
         {skills.map((skill, index) => {
           return (
             <div

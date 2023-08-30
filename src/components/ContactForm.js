@@ -5,10 +5,10 @@ import { useState } from "react";
 export default function ContactForm() {
   const [status, setStatus] = useState("");
   return (
-    <div className="flex justify-center items-center w-full h-full">
+    <div className="flex justify-center items-center w-4/5 sm:w-full h-full">
       <form
         id="form"
-        className="flex flex-col items-center w-full h-full px-10 py-10 gap-5"
+        className="flex flex-col items-center w-full h-full px-2 mx-auto sm:px-10 py-10 gap-5"
         action={async (formData) => {
           const res = await handleFormSubmit(formData);
           //   console.log(res);
@@ -26,36 +26,36 @@ export default function ContactForm() {
           If you like my work or are interested in collaborating,
           <br /> Please fill the form, I will get back to you ASAP!
         </div>
-        <div className="flex items-center gap-8 text-xl justify-between w-full">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-8 text-xl justify-between w-4/5 sm:w-full">
           <span>
             Name<span className="text-red-900">*</span>
           </span>
           <input
-            className="bg-black w-96 border text-lg border-neutral-700 focus:outline-none p-3 rounded-md"
+            className="bg-black sm:w-96 border text-lg border-neutral-700 focus:outline-none p-3 rounded-md"
             type="text"
             name="name"
             required="true"
             placeholder="Your Name"
           />
         </div>
-        <div className="flex items-center gap-8 text-xl justify-between w-full">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-8 text-xl justify-between w-4/5 sm:w-full">
           <span>
             Email<span className="text-red-900">*</span>
           </span>
           <input
-            className="bg-black w-96 border text-lg border-neutral-700 focus:outline-none p-3 rounded-md"
+            className="bg-black sm:w-96 border text-lg border-neutral-700 focus:outline-none p-3 rounded-md"
             type="email"
             name="email"
             required="true"
             placeholder="Your Mail"
           />
         </div>
-        <div className="flex items-center gap-8 text-xl justify-between w-full ">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-8 text-xl justify-between w-4/5 sm:w-full">
           <span>
             Message<span className="text-red-900">*</span>
           </span>
           <textarea
-            className="resize-none text-lg bg-black w-96 border border-neutral-700 focus:outline-none p-3 rounded-md"
+            className="resize-none text-lg bg-black sm:w-96 border border-neutral-700 focus:outline-none p-3 rounded-md"
             type="text"
             name="message"
             required="true"

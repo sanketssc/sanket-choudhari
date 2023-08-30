@@ -22,7 +22,7 @@ const NavBar = () => {
   va.track(pathname);
 
   return (
-    <nav className="flex items-center justify-center w-full gap-10 flex-wrap px-4 py-4">
+    <nav className="flex items-center justify-center w-full gap-6 sm:gap-10 flex-wrap px-4 py-4">
       {Object.entries(navItems).map(([path, { name }]) => {
         const isActive = pathname === path;
         return (
