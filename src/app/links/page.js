@@ -78,14 +78,14 @@ const links = [
 
 export const revalidate = 0;
 const Links = async () => {
-  const getDiscordStatus = async () => {
-    const discord = await fetch(
-      "https://api.lanyard.rest/v1/users/381798111586156545"
-    );
-    const data = await discord.json();
-    return data.data;
-  };
-  const data = await getDiscordStatus();
+  // const getDiscordStatus = async () => {
+  //   const discord = await fetch(
+  //     "https://api.lanyard.rest/v1/users/381798111586156545"
+  //   );
+  //   const data = await discord.json();
+  //   return data.data;
+  // };
+  // const data = await getDiscordStatus();
 
   return (
     <div className="flex flex-col gap-5 w-full px-10 py-5">
@@ -103,11 +103,11 @@ const Links = async () => {
             <span className="flex items-center">{link.icon}</span>
             <span className="basis-1/3 sm:ml-28 text-center">
               {link.name}{" "}
-              {link.name === "Discord"
+              {/*link.name === "Discord"
                 ? data.discord_status === "online"
                   ? "- online"
                   : "- offline"
-                : ""}
+                : ""*/}
             </span>
             <span className="basis-1/3 text-xs sm:text-base sm:basis-1/4 text-right">
               {link.username}
