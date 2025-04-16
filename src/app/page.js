@@ -165,7 +165,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-col mt-8">
         <span>
-          For projects that are built with above technolofies please visit
+          For projects that are built with above technologies please visit
         </span>
         <Link className="underline text-neutral-50" href="/projects">
           Projects page
