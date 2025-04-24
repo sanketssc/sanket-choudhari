@@ -80,6 +80,21 @@ const projects = [
       },
     ],
   },
+  {
+    name: "Online Code Editor",
+    description: "Developed an online code editor playground app utilizing AWS Elastic Container Service (ECS) to create a separate environment for each project upon request, leveraging neon pg db and Docker for containerization. Implemented auto-scaling functionality using AWS SDK, ensuring dedicated servers for each project, resulting in improved performance and scalability. Leveraged Drizzle ORM for efficient database connectivity and management",
+    tools: "AWS, Next JS, aws-sdk v3 for Node, Drizzle ORM, TypeScript, Node, Monaco Editor, Xtermjs, node pty",
+    repo: [
+      {
+        name: "Frontend/ Fullstack",
+        link: "https://github.com/sanketssc/codedamn-frontend"
+      },
+      {
+        name: "Docker Image",
+        link: "https://github.com/sanketssc/base-image-code-editor"
+      }
+    ]
+  }
 ];
 
 const Projects = () => {

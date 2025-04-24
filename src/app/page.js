@@ -122,7 +122,7 @@ export default async function Home() {
         </div>
         <Link
           href={
-            "https://drive.google.com/file/d/1ZT1QpSLLDOvtKLSIEpZ4tjenNVeN4dnn/view?usp=sharing"
+            "https://drive.google.com/file/d/1bEB7A-AK6Y1XidmlR4qZl2Z6H4RRyo7n/view?usp=drive_link"
           }
           className="flex items-center gap-1 underline underline-offset-4 "
           target="_blank"

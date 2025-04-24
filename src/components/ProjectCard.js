@@ -8,9 +8,9 @@ const ProjectCard = ({ project }) => {
       <div className="group flex flex-col w-full gap-4 px-3 py-3 bg-neutral-900 border border-neutral-700 hover:border-gray-700 hover:bg-[rgb(20,24,25,1)] rounded-lg">
         <Link
           className="flex items-center text-2xl text-neutral-400 group-hover:text-neutral-200"
-          href={project.url}
+          href={project.url ?? "#"}
           rel="noopener noreferrer"
-          target="_blank"
+          target={project.url ? "_blank" : "_self"}
         >
           {project.name}
           <HiOutlineArrowTopRightOnSquare className="inline ml-1 mb-1" />
